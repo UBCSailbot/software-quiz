@@ -24,18 +24,14 @@ You can find the results in the Actions tab on GitHub: [viewing your workflow re
         2. Execute the following commands
 
             ```sh
-            flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+            flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
             ```
 
-            ```sh
-            flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-            ```
+            - Outputs `0` on success
 
             ```sh
             pytest
             ```
-
-            - The first 2 commands output `0` on success
 
 7. When you are done, send us the link to your repository
 
