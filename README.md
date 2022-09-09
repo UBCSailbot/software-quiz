@@ -48,14 +48,16 @@ so you can try using those if you want to get a hang of the tools earlier (you a
 These are not strict instructions. You can change whatever you wish so long as the functions specifications in
 `standard_calc.cpp` are met and unit tests are included.
 
-5. Add unit tests to `test_standard_calc.cpp` to verify your implementations are correct
+5. Run `git submodule update --init` to pull the unit test framework.
 
-6. If you are on Linux, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
+6. Add unit tests to `test_standard_calc.cpp` to verify your implementations are correct
+
+7. If you are on Linux, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
    If you are on Mac, perform the same steps as Linux. If you get an error about gcc not being installed then edit the Makefile and replace gcc with clang
    If you are on Windows, you can add the files to VSCode and compile/run that way, or install a compiler like
    [MinGw](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe) (link is to the installer download) and do the Linux steps
 
-7. Push your code and send us a link to your repository
+8. Push your code and send us a link to your repository
 
 ## Resources
 
