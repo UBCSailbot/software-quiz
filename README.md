@@ -47,8 +47,8 @@ You may use any resources you find, but must complete the quiz individually. Goo
 
 - Even though the functions are defined in C++ (`.cpp`) files, you can use standard C syntax in them without issue.
 - This repository includes the [CuTest](https://github.com/ennorehling/cutest) unit test framework because
-it is simple and supports both C and C++. Another option would be [GoogleTest](https://github.com/google/googletest),
-which our Kernel team uses, but feel free to use any other unit test frameworks that you are familiar with.
+it is simple and supports both C and C++. Alternatively you can use [GoogleTest](https://github.com/google/googletest),
+which is what our Kernel team uses, but you would have to figure out how to compile, run, and pass the continuous integration tests yourself.
     - To pull CuTest, run `git submodule update --init` in the repository.
         - Alternatively if you are using the ZIP file submission option, download the CuTest repository as a ZIP file and extract it to `c-cpp/cutest/`
 - Compile and run instructions
