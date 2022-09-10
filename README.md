@@ -34,7 +34,6 @@ You may use any resources you find, but must complete the quiz individually. Goo
             * See the [C/C++ Notes](#cc-notes) section below for more details
 3. *Bonus (Optional)*: pass the continuous integration tests on GitHub
     - Python: runs `flake8 . --count --max-complexity=10 --max-line-length=127 --statistics` and `pytest` successfully
-        - To run these tests locally install the required packages: `pip install flake8 pytest`
         - `flake8` outputs 0 on success
         - References that you may find helpful: [Flake8](https://flake8.pycqa.org/en/latest/), [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html)
     - C/C++: runs `make` successfully
