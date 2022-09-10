@@ -21,5 +21,5 @@ float bound_to_180(float angle) {
  * @return bool: TRUE when `middle_angle` is not in the reflex angle of `first_angle` and `second_angle`, FALSE otherwise
  */
 bool is_angle_between(float first_angle, float middle_angle, float second_angle) {
-    return false;
+    return true;
 }
