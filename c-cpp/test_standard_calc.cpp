@@ -4,7 +4,7 @@
 
 /**************** Tests for bound_to_180() *******************/
 void test_bound_basic1(CuTest *tc) {
-    CuAssertDblEquals(tc, bound_to_180(0), 0, 0.0001);
+    CuAssertDblEquals(tc, 0, bound_to_180(0), 0.0001);
 }
 
 /**************** Tests for is_angle_between() *******************/
