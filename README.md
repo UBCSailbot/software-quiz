@@ -50,8 +50,9 @@ You may use any resources you find, but must complete the quiz individually. Goo
 it is simple and supports both C and C++. Another option would be [GoogleTest](https://github.com/google/googletest),
 which our Kernel team uses, but feel free to use any other unit test frameworks that you are familiar with.
     - To pull CuTest, run `git submodule update --init` in the repository.
+    - Alternatively, download the CuTest repository as a zip and place the contents in [c-cpp/cutest](c-cpp/cutest/)
 - Compile and run instructions
     - Linux or WSL: in the `c-cpp/` directory, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
-    - MacOS: perform the same steps as Linux. If you get an error about `gcc` not being installed, edit the Makefile and replace `gcc` with `clang`
+    - MacOS: perform the same steps as Linux. If you get an error about `g++` not being installed, edit the Makefile and replace `g++` with `clang++`
     - Windows: add the files to VSCode and compile/run that way, or install a compiler like
     [MinGw](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe) (link is to the installer download) and do the Linux steps
