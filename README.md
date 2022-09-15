@@ -50,7 +50,7 @@ it is simple and supports both C and C++
     - Alternatively you can use [GoogleTest](https://github.com/google/googletest), which is what our Kernel team uses,
       but you would have to figure out how to compile, run, and pass the continuous integration tests yourself
 
-#### Compile and run instructions
+#### Compile and Run Instructions
 - **Linux or WSL**: in the `c-cpp/` directory, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
     - Note: `g++` doesn't come with all Linux distributions, so you may have to install it yourself
 - **MacOS**: perform the same steps as Linux
