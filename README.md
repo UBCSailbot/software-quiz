@@ -48,8 +48,6 @@ You may use any resources you find, but must complete the quiz individually. Goo
 - This repository includes the [CuTest](https://github.com/ennorehling/cutest) unit test framework because
 it is simple and supports both C and C++. Alternatively you can use [GoogleTest](https://github.com/google/googletest),
 which is what our Kernel team uses, but you would have to figure out how to compile, run, and pass the continuous integration tests yourself.
-    - To pull CuTest, run `git submodule update --init` in the repository.
-        - Alternatively if you are using the ZIP file submission option, [download the CuTest repository as a ZIP file](https://github.com/ennorehling/cutest/archive/refs/heads/master.zip) and extract it to `c-cpp/cutest/` in the quiz
 - Compile and run instructions
     - Linux or WSL: in the `c-cpp/` directory, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
         - Note: `g++` doesn't come with all Linux distributions, so you may have to install it yourself
