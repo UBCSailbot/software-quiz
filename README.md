@@ -44,14 +44,17 @@ You may use any resources you find, but must complete the quiz individually. Goo
 
 ### C/C++ Notes
 
-- Even though the functions are defined in C++ (`.cpp`) files, you can use standard C syntax in them without issue.
+- Even though the functions are defined in C++ (`.cpp`) files, you can use standard C syntax in them without issue
 - This repository includes the [CuTest](https://github.com/ennorehling/cutest) unit test framework because
-it is simple and supports both C and C++. Alternatively you can use [GoogleTest](https://github.com/google/googletest),
-which is what our Kernel team uses, but you would have to figure out how to compile, run, and pass the continuous integration tests yourself.
-- Compile and run instructions
-    - Linux or WSL: in the `c-cpp/` directory, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
-        - Note: `g++` doesn't come with all Linux distributions, so you may have to install it yourself
-    - MacOS: perform the same steps as Linux
-        - If you get an error about `g++` not being installed, edit the Makefile and replace `g++` with `clang++`
-    - Windows: add the files to VSCode and compile/run that way, or install a compiler like
-    [MinGw](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe) (link is to the installer download) and do the Linux steps
+it is simple and supports both C and C++
+    - Alternatively you can use [GoogleTest](https://github.com/google/googletest), which is what our Kernel team uses,
+      but you would have to figure out how to compile, run, and pass the continuous integration tests yourself
+
+#### Compile and run instructions
+- **Linux or WSL**: in the `c-cpp/` directory, run `make` in your terminal to compile your code and `./test_standard_calc.o` to run it
+    - Note: `g++` doesn't come with all Linux distributions, so you may have to install it yourself
+- **MacOS**: perform the same steps as Linux
+    - If you get an error about `g++` not being installed, edit the Makefile and replace `g++` with `clang++`
+- **Windows**: add the files to VSCode and compile/run that way, or install a compiler like
+[MinGw](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe)
+(link is to the installer download) and do the Linux steps
