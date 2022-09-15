@@ -19,7 +19,7 @@ You may use any resources you find, but must complete the quiz individually. Goo
 
 1. Get the quiz on your computer using the method of your choice
     - GitHub
-        1. At the top of https://github.com/UBCSailbot/software-quiz, click "Use this template" to create a **public** repository under your personal GitHub account
+        1. [Use this repository as a template](https://github.com/UBCSailbot/software-quiz/generate) to create a **public** repository under your personal GitHub account
         2. Clone the repository you just created
     - ZIP file
         1. [Download this repository as a ZIP file](https://github.com/UBCSailbot/software-quiz/archive/refs/heads/master.zip)
