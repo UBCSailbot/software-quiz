@@ -1,6 +1,10 @@
 def bound_to_180(angle):
     """Bounds the provided angle between [-180, 180) degrees.
 
+    e.g.)
+        bound_to_180(135) = 135
+        bound_to_180(200) = -160
+
     Args:
         angle (float): The input angle in degrees.
 
@@ -12,6 +16,10 @@ def bound_to_180(angle):
 
 def is_angle_between(first_angle, middle_angle, second_angle):
     """Determines whether an angle is between two other angles.
+
+    e.g.)
+        is_angle_between(0, 45, 90) = True
+        is_angle_between(45, 90, 270) = False
 
     Args:
         first_angle (float): The first bounding angle in degrees.
