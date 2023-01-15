@@ -2,8 +2,8 @@ def bound_to_180(angle):
     """Bounds the provided angle between [-180, 180) degrees.
 
     e.g.)
-        bound_to_180(135) = 135
-        bound_to_180(200) = -160
+        bound_to_180(135) = 135.0
+        bound_to_180(200) = -160.0
 
     Args:
         angle (float): The input angle in degrees.
