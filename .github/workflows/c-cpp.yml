@@ -6,7 +6,8 @@ on:
   pull_request:
 
 jobs:
-  test:
+  tests:
+    name: Local Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -17,3 +18,10 @@ jobs:
 
     - name: Test with CuTest
       run: c-cpp/test_standard_calc.o
+
+  hidden-tests:
+    name: Solution Tests (Output Hidden)
+    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml
+    with:
+      repository: ${{ github.repository }}
+      cutest: true
