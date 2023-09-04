@@ -21,7 +21,7 @@ jobs:
 
   hidden-tests:
     name: Solution Tests (Output Hidden)
-    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml
+    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@master
     with:
       repository: ${{ github.repository }}
       cutest: true
