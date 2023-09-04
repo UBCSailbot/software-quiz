@@ -20,7 +20,7 @@ on:
 
 jobs:
   cutest:
-    if: ${{ inputs.cutest }}
+    if: ${{ inputs.cutest }} && ${{ secrets.GH_TOKEN }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository
@@ -47,7 +47,7 @@ jobs:
       run: src/c-cpp/test_standard_calc.o > /dev/null 2>&1
 
   pytest:
-    if: ${{ inputs.pytest }}
+    if: ${{ inputs.pytest }} && ${{ secrets.GH_TOKEN }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository

@@ -38,3 +38,4 @@ jobs:
     with:
       repository: ${{ github.repository }}
       pytest: true
+    secrets: inherit
