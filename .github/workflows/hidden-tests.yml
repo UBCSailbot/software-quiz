@@ -35,7 +35,7 @@ jobs:
       with:
         path: 'sol'
         repository: '${{ github.repository }}'
-        token: '${{ secrets.token }}'
+        token: '${{ secrets.TOKEN }}'
 
     - name: Copy solutions to src
       run: cp sol/c-cpp/test_standard_calc.cpp src/c-cpp
@@ -62,7 +62,7 @@ jobs:
       with:
         path: 'sol'
         repository: '${{ github.repository }}'
-        token: '${{ secrets.token }}'
+        token: '${{ secrets.TOKEN }}'
 
     - name: Copy solutions to src
       run: cp sol/python/test_standard_calc.py src/python
