@@ -21,7 +21,6 @@ on:
 jobs:
   cutest:
     if: ${{ inputs.cutest }}
-    name: ${{ inputs.repository }} - C/C++ Hidden Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository
@@ -49,7 +48,6 @@ jobs:
 
   pytest:
     if: ${{ inputs.pytest }}
-    name: ${{ inputs.repository }} - Python Hidden Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository
