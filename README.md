@@ -37,8 +37,11 @@ You may use any resources you find, but must complete the quiz individually. Goo
         - `flake8` outputs 0 on success
         - References that you may find helpful: [Flake8](https://flake8.pycqa.org/en/latest/), [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html)
     - C/C++: runs `make` successfully
-    - Hidden Tests: Give your email contact access to your repository so that they can enable hidden tests
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
+    - Hidden tests
+        - Enable by asking your email contact to add the required repository secret
+        - Run Python solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/python-hidden.yml) and C/C++ solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/c-cpp-hidden.yml)
+            - Once the repository secret has been added, the Tests Prerequisites Check job should pass
 4. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us
