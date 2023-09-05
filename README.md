@@ -41,7 +41,7 @@ You may use any resources you find, but must complete the quiz individually. Goo
     - Hidden tests
         - Enable by asking your email contact to add the required repository secret
         - Run Python solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/python-hidden.yml) and C/C++ solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/c-cpp-hidden.yml)
-            - Tests will be skipped if the secret is not defined
+            - Once the repository secret has been added, the Tests Prerequisites Check job should pass
 4. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us

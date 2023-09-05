@@ -7,24 +7,18 @@ jobs:
   tests-prereq:
     name: Tests Prerequisites Check
     runs-on: ubuntu-latest
-    outputs:
-      gh_token_exists: ${{ steps.gh_token_check.outputs.defined }}
     steps:
-    - name: Check if secrets.GH_TOKEN is defined
-      id: gh_token_check
-      shell: bash
+    - name: Check if secrets.GH_TOKEN is set
       run: |
-        if [ "${{ secrets.GH_TOKEN }}" != '' ]; then
-          echo "defined=true" >> $GITHUB_OUTPUT;
-        else
-          echo "defined=false" >> $GITHUB_OUTPUT;
+        if [ -z "${{ secrets.GH_TOKEN }}" ]; then
+          echo "GH_TOKEN is not set"
+          exit 1
         fi
 
   tests:
     name: Solution Tests (Output Hidden)
     uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@master
     needs: [tests-prereq]
-    if: needs.tests-prereq.outputs.gh_token_exists == 'true'
     with:
       repository: ${{ github.repository }}
       cutest: true
