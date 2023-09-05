@@ -1,7 +1,9 @@
 name: C/C++ Tests
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "master" ]
+  pull_request:
 
 jobs:
   tests:
@@ -16,12 +18,3 @@ jobs:
 
     - name: Test with CuTest
       run: c-cpp/test_standard_calc.o
-
-  hidden-tests:
-    name: Solution Tests (Output Hidden)
-    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@patrick-5546/update-ci
-    with:
-      repository: ${{ github.repository }}
-      cutest: true
-    secrets:
-      token: ${{ secrets.GH_TOKEN }}

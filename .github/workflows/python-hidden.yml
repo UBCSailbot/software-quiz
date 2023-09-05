@@ -1,0 +1,14 @@
+name: Python Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Solution Tests (Output Hidden)
+    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@patrick-5546/update-ci
+    with:
+      repository: ${{ github.repository }}
+      pytest: true
+    secrets:
+      token: ${{ secrets.GH_TOKEN }}
