@@ -11,7 +11,7 @@ jobs:
     - name: Check if secrets.GH_TOKEN is defined
       run: |
         if [ -z "${{ secrets.GH_TOKEN }}" ]; then
-          echo "GH_TOKEN is not set"
+          echo "GH_TOKEN is not set, ask your email contact to add it for you"
           exit 1
         fi
 
