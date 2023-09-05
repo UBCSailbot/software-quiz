@@ -9,8 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check if secrets.GH_TOKEN is defined
-      run:
-        echo "${{ secrets.GH_TOKEN }}"
+      run: |
+        if [ "${{ secrets.GH_TOKEN }}" != '' ]; then
+          echo "available=true" >> $GITHUB_OUTPUT;
+        else
+          echo "available=false" >> $GITHUB_OUTPUT;
+        fi
 
   tests:
     name: Solution Tests (Output Hidden)
