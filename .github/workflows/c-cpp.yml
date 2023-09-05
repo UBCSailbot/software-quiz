@@ -1,9 +1,7 @@
 name: C/C++ Tests
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   tests:
@@ -25,4 +23,5 @@ jobs:
     with:
       repository: ${{ github.repository }}
       cutest: true
-    secrets: inherit
+    secrets:
+      token: ${{ secrets.GH_TOKEN }}
