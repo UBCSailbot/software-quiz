@@ -6,7 +6,8 @@ on:
   pull_request:
 
 jobs:
-  test:
+  tests:
+    name: Local Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository

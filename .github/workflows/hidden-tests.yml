@@ -17,11 +17,14 @@ on:
         default: false
         required: false
         type: boolean
+    secrets:
+      # Token to access solutions repository
+      token:
+        required: false
 
 jobs:
   cutest:
     if: ${{ inputs.cutest }}
-    name: ${{ inputs.repository }} - C/C++ Hidden Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository
@@ -35,8 +38,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: 'sol'
-        repository: '${{ github.repository }}'
-        token: '${{ secrets.token }}'
+        repository: 'UBCSailbot/software-quiz-sample-solution'
+        token: ${{ secrets.token }}
 
     - name: Copy solutions to src
       run: cp sol/c-cpp/test_standard_calc.cpp src/c-cpp
@@ -49,7 +52,6 @@ jobs:
 
   pytest:
     if: ${{ inputs.pytest }}
-    name: ${{ inputs.repository }} - Python Hidden Tests
     runs-on: ubuntu-latest
     steps:
     - name: Checkout src repository
@@ -63,8 +65,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: 'sol'
-        repository: '${{ github.repository }}'
-        token: '${{ secrets.token }}'
+        repository: 'UBCSailbot/software-quiz-sample-solution'
+        token: ${{ secrets.token }}
 
     - name: Copy solutions to src
       run: cp sol/python/test_standard_calc.py src/python
