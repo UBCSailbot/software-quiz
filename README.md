@@ -40,7 +40,7 @@ You may use any resources you find, but must complete the quiz individually. Goo
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
     - Hidden Tests:
         - Enable by asking your email contact to add the required repository secret
-        - Run Python solution tests [here]() and C/C++ solution tests [here]()
+        - Run Python solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/python-hidden.yml) and C/C++ solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/c-cpp-hidden.yml)
             - Once the repository secret has been added, the Tests Prerequisites Check job should pass
 4. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
