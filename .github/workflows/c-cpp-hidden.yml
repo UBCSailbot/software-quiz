@@ -4,9 +4,17 @@ on:
   workflow_dispatch:
 
 jobs:
+  tests-prereq:
+    name: Tests Prerequisites check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check if secrets.GH_TOKEN is defined
+      run:
+        echo "${{ secrets.GH_TOKEN }}"
+
   tests:
     name: Solution Tests (Output Hidden)
-    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@patrick-5546/update-ci
+    uses: UBCSailbot/software-quiz/.github/workflows/hidden-tests.yml@main
     with:
       repository: ${{ github.repository }}
       cutest: true
