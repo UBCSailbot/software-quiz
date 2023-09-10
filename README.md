@@ -32,19 +32,20 @@ You may use any resources you find, but must complete the quiz individually. Goo
         1. Complete the functions in `c-cpp/standard_calc.cpp`
         2. Add unit tests in `c-cpp/test_standard_calc.cpp` to verify your implementations
             * See the [C/C++ Notes](#cc-notes) section below for more details
-3. *Bonus (Optional)*: pass the continuous integration tests on GitHub
+3. Pass the continuous integration tests on GitHub *(Optional)*
     - Python: runs `flake8 . --count --max-complexity=10 --max-line-length=127 --statistics` and `pytest` successfully
         - `flake8` outputs 0 on success
         - References that you may find helpful: [Flake8](https://flake8.pycqa.org/en/latest/), [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html)
     - C/C++: runs `make` successfully
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
-    - Hidden tests: You can test your solution against our hidden tests. Just do the following:
-        - Add **ubcsailbotsoftware** as a contributor to your quiz repo. [See how here.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
-        - Enable by emailing `software@ubcsailbot.org` and ask to add the required repository secret
-        - Run Python solution tests manually by going to **Actions > Python Solution Tests > Run Workflow**
-        - Run C++ solution tests manually by going to **Actions > C++ Solution Tests > Run Workflow**
-        - Once the repository secret has been added, the Tests Prerequisites Check job should pass if your functions correctly implement their specifications
-4. Submit the completed quiz
+4. Hidden tests: You can test your solution against our hidden tests *(Optional)*
+    - Add **ubcsailbotsoftware** as a contributor to your quiz repo. [See how here.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+    - Enable by emailing `software@ubcsailbot.org` and asking to add the required repository secret
+    - Run Python solution tests manually by going to **Actions > Python Solution Tests > Run Workflow**
+    - Run C++ solution tests manually by going to **Actions > C++ Solution Tests > Run Workflow**
+        - Test prerequisites job should pass after the secret is added, which is required for the solution tests job to run
+        - If your solution is implemented correctly, the Solution Tests jobs for your chosen language will pass
+5. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us
 
