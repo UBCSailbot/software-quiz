@@ -38,10 +38,7 @@ You may use any resources you find, but must complete the quiz individually. Goo
         - References that you may find helpful: [Flake8](https://flake8.pycqa.org/en/latest/), [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html)
     - C/C++: runs `make` successfully
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
-4. Hidden tests: You can test your solution against our hidden tests *(Optional)*
-    - In the [template repository's Hidden Tests action](https://github.com/UBCSailbot/software-quiz/actions/workflows/hidden-tests.yml),
-      click **Run workflow**, enter your repository identifier, select the hidden tests you want to run, then click **Run workflow**
-5. Submit the completed quiz
+4. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us
 
