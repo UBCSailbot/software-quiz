@@ -32,17 +32,16 @@ You may use any resources you find, but must complete the quiz individually. Goo
         1. Complete the functions in `c-cpp/standard_calc.cpp`
         2. Add unit tests in `c-cpp/test_standard_calc.cpp` to verify your implementations
             * See the [C/C++ Notes](#cc-notes) section below for more details
-3. *Bonus (Optional)*: pass the continuous integration tests on GitHub
+3. Pass the continuous integration tests on GitHub *(Optional)*
     - Python: runs `flake8 . --count --max-complexity=10 --max-line-length=127 --statistics` and `pytest` successfully
         - `flake8` outputs 0 on success
         - References that you may find helpful: [Flake8](https://flake8.pycqa.org/en/latest/), [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html)
     - C/C++: runs `make` successfully
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
-    - Hidden tests
-        - Enable by asking your email contact to add the required repository secret
-        - Run Python solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/python-hidden.yml) and C/C++ solution tests [here](https://github.com/UBCSailbot/software-quiz/actions/workflows/c-cpp-hidden.yml)
-            - Once the repository secret has been added, the Tests Prerequisites Check job should pass
-4. Submit the completed quiz
+4. Hidden tests: You can test your solution against our hidden tests *(Optional)*
+    - In the [template repository's Hidden Tests action](https://github.com/UBCSailbot/software-quiz/actions/workflows/hidden-tests.yml),
+      click **Run workflow**, enter your repository identifier, select the hidden tests you want to run, then click **Run workflow**
+5. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us
 
