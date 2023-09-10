@@ -1,26 +1,23 @@
 name: Hidden Tests
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
-      # The repository name: ${{ github.repository }}
       repository:
+        description: '<owner>/<repository>'
+        default: 'UBCSailbot/software-quiz'
         required: true
         type: string
-      # Run C/C++ tests
       cutest:
+        description: 'check to run cutest'
         default: false
         required: false
         type: boolean
-      # Run python tests
       pytest:
+        description: 'check to run pytest'
         default: false
         required: false
         type: boolean
-    secrets:
-      # Token to access solutions repository
-      token:
-        required: false
 
 jobs:
   cutest:
@@ -39,7 +36,7 @@ jobs:
       with:
         path: 'sol'
         repository: 'UBCSailbot/software-quiz-sample-solution'
-        token: ${{ secrets.token }}
+        token: ${{ secrets.GH_TOKEN }}
 
     - name: Copy solutions to src
       run: cp sol/c-cpp/test_standard_calc.cpp src/c-cpp
@@ -66,7 +63,7 @@ jobs:
       with:
         path: 'sol'
         repository: 'UBCSailbot/software-quiz-sample-solution'
-        token: ${{ secrets.token }}
+        token: ${{ secrets.GH_TOKEN }}
 
     - name: Copy solutions to src
       run: cp sol/python/test_standard_calc.py src/python

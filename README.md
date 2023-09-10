@@ -39,12 +39,8 @@ You may use any resources you find, but must complete the quiz individually. Goo
     - C/C++: runs `make` successfully
     - You can find the results in the Actions tab on GitHub: [viewing your workflow results](https://docs.github.com/en/actions/quickstart#viewing-your-workflow-results).
 4. Hidden tests: You can test your solution against our hidden tests *(Optional)*
-    - Add **ubcsailbotsoftware** as a contributor to your quiz repo. [See how here.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
-    - Enable by emailing `software@ubcsailbot.org` and asking to add the required repository secret
-    - Run Python solution tests manually by going to **Actions > Python Solution Tests > Run Workflow**
-    - Run C++ solution tests manually by going to **Actions > C++ Solution Tests > Run Workflow**
-        - Test prerequisites job should pass after the secret is added, which is required for the solution tests job to run
-        - If your solution is implemented correctly, the Solution Tests jobs for your chosen language will pass
+    - In the [template repository's Hidden Tests action](https://github.com/UBCSailbot/software-quiz/actions/workflows/hidden-tests.yml),
+      click **Run workflow**, enter your repository identifier, select the hidden tests you want to run, then click **Run workflow**
 5. Submit the completed quiz
     - GitHub: send us the link to your repository, ensuring that it is public
     - ZIP file: zip the quiz and send it to us
