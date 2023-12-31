@@ -9,7 +9,7 @@ Please choose **one** option from each of the bullet points above. Some notes ab
 
 - If you are interested in a particular subteam, it is encouraged, but not required, to use their main programming language
     - Pathfinding, Controls: Python
-    - Kernel (previously Navigation): C++
+    - Network Systems: C++
 - Selecting the GitHub repository submission option will give you the opportunity to earn bonus points,
 see Step 3 of the [Instructions](#instructions) section below for more details.
 
@@ -47,7 +47,7 @@ You may use any resources you find, but must complete the quiz individually. Goo
 - Even though the functions are defined in C++ (`.cpp`) files, you can use standard C syntax in them without issue
 - This repository includes the [CuTest](https://github.com/ennorehling/cutest) unit test framework because
 it is simple and supports both C and C++
-    - Alternatively you can use [GoogleTest](https://github.com/google/googletest), which is what our Kernel team uses,
+    - Alternatively you can use [GoogleTest](https://github.com/google/googletest), which is what our Network Systems team uses,
       but you would have to figure out how to compile, run, and pass the continuous integration tests yourself
 
 #### C/C++ Compile and Run Instructions
